@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(15, 136, 176, 0.8);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    padding: 40px 24px;
+}
+
+.todo-header {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.todo-input {
+    display: flex;
+    gap: 10px;
+    margin: 12px 0;
+    width: 100%;
+}
+
+#todoInput {
+    width: 750px;
+    height: 40px;
+    border-radius: 12px;
+    border: 2px solid #f07167;
+    outline: none;
+    padding: 20px 15px;
+}
+
+#todoInput:focus {
+    border: 2px solid red;
+}
+
+#todoAddBtn {
+    padding: 12px 20px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: #00afb9;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 12px;
+    transition: all .2s ease-in-out;
+}
+
+#todoAddBtn:hover {
+    background-color: #f07167;
+}
+
+#todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #adb5bd;
+    width: 100%;
+    padding: 12px 20px;
+    text-align: center;
+}
+
+.checkbox {
+    cursor: pointer;
+}
+
+.todo {
+    font-size: 18px;
+    color: #008000;
+    font-weight: bold;
+}
+
+.line-through {
+    text-decoration: line-through;
+    color: red;
+}
+
+.icon-container i {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+    #todoAddBtn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .container {
+        width: 85%;
+    }
+    
+    .todo-input {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #todoInput {
+        width: 100%;
+    }
+
+    #todoAddBtn {
+        padding: 12px 20px;
+        font-size: 14px;
+        width: 100%;
+    }
+}
+
+
